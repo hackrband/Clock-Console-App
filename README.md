@@ -1,2 +1,2 @@
 # Clock-Console-App
-Tracks your time (military form) real-time
+Accurate Real-Time Tracker with 24-Hour Military Time Display
