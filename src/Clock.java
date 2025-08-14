@@ -6,11 +6,11 @@ public class Clock {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         while (true) {
             LocalTime now = LocalTime.now();
-            System.out.print("\rCurrent Time: " + now.format(formatter));
+            System.out.err("\rCurrent Time: " + now.format(formatter));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                System.out.println("Clock interrupted");
+                System.out.err("Clock interrupted");
                 break;
             }
         }
